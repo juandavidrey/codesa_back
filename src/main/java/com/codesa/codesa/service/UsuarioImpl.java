@@ -24,4 +24,11 @@ public class UsuarioImpl implements UsuarioService{
         return usuarioRepository.consultar(nombre);
     }
     
+    @Override
+    public void deleteUsuario(int id) {
+		System.out.println("UsuarioImpl delete");
+
+		usuarioRepository.deleteById(id);
+	}
+
 }

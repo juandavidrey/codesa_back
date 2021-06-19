@@ -8,5 +8,6 @@ public interface UsuarioService {
 
     List<Usuario> getUsuarios();
     List<Usuario> consultar(String nombre);
+    void deleteUsuario(int id);
     
 }

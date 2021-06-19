@@ -12,4 +12,6 @@ import java.util.List;
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer>{
     @Query("select u from Usuario u where u.USUARIO_NOMBRE like %:nombre% ")
     List<Usuario> consultar(String nombre);
+
+    
 }
